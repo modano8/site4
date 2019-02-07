@@ -1,0 +1,125 @@
+.wrapper {
+  display: flex;  
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+  background: #f2f2f2;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+  
+}
+
+.header {
+  /* background: tomato; */
+  padding-top:30px;
+}
+
+.footer {
+  /* background: lightgreen; */
+}
+
+.main {
+  text-align: left;
+  /* background: deepskyblue; */
+  position: relative;
+  height: 400px;
+}
+
+.aside-1 {
+  /* background: gold; */
+}
+
+.aside-2 {
+  /* background: hotpink; */
+}
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 0 0; }
+}
+
+@media all and (min-width: 800px) {
+  .main    { flex: 1 0px; }
+  .aside-1 { order: 1; }
+  .aside-content-2 {
+    width: 813px;
+    height: 512px;
+  } 
+  .main    { order: 2; }
+  .footer  { order: 4; }
+}
+
+body{
+  margin: 0;
+	padding: 0;
+}
+
+.mainContent {
+  padding: 5em; 
+}
+
+.aside-content-1{
+  padding-top: 70px;
+}
+.aside-content-2{
+  background: url(https://secure.skypeassets.com/content/dam/scom/downloads/devices/laptop-device.svg) 0 0/cover;
+  position:absolute;
+  top: 50px;
+}
+
+.aside-button-1{
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  border-radius: 100px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0;
+  padding: 10px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  word-wrap: break-word;
+}
+
+/* SuitBar */
+
+.SuitBar{
+  height: 50px;
+  background-color: black;
+}
+
+.SiteHeader{
+  height: 107px;
+}
+
+/* NavBar */
+
+.nav{
+  list-style:none;
+  margin:0;
+  padding:0;
+  text-align:center;
+}
+.nav li{
+  display:inline;
+}
+.nav a{
+  display:inline-block;
+  padding:10px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 25px;
+  font-size: 18px;
+  padding: 13px 30px 13px 30px;
+  text-decoration: none;
+}
+.nav a.active{
+  background-color: black;
+  box-shadow: 0 10px 30px 0 rgba(43,44,51,0.15);
+}
