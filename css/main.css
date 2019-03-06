@@ -42,17 +42,25 @@
 
 @media all and (min-width: 600px) {
   .aside { flex: 1 0 0; }
+  .aside-content-2 {
+    width: 413px;
+    height: 250px;
+  } 
 }
 
 @media all and (min-width: 800px) {
   .main    { flex: 1 0px; }
   .aside-1 { order: 1; }
   .aside-content-2 {
-    width: 813px;
-    height: 512px;
+    /* width: 813px;
+    height: 512px; */
+    top: 110px !important;
+    width: 600px;
+    height: 360px;
   } 
   .main    { order: 2; }
   .footer  { order: 4; }
+  
 }
 
 body{
@@ -68,6 +76,7 @@ body{
   padding-top: 70px;
 }
 .aside-content-2{
+  /* background: url(https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWlux6?ver=f052&q=90&m=6&h=201&w=358&b=%23FFFFFFFF&l=f&o=t&aim=true) 0 0/cover; */
   background: url(https://secure.skypeassets.com/content/dam/scom/downloads/devices/laptop-device.svg) 0 0/cover;
   position:absolute;
   top: 50px;
